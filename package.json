@@ -1,0 +1,11 @@
+{
+  "name": "can_do",
+  "version": "1.0.0",
+  "description": "Just a collection of lightweight canvas API wrapper and drawing utils.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

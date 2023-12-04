@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Can Do Test File</title>
+    <script src="./src/index.js"></script>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script type="text/javascript">
+      function draw() {
+        const [canvas, ctx] = get_canvas_by_id("canvas");
+        resize_canvas(canvas, 100,100);
+        set_fill(ctx, "green")
+        draw_rect(ctx, 0,0, 100,100);
+        draw_rect(ctx, 10,10,80,80, RECT_MODES.clear);
+        animation_loop((delta, frame_num) => {
+          draw_rect(ctx, frame_num * 10 ,10,1,80, RECT_MODES.fill);
+        })
+      }
+      window.addEventListener("load", draw);
+    </script>
+  </body>
+</html>
